@@ -11,7 +11,7 @@ export default function ExpenseForm(props) {
   };
 
   const amountChangeHandler = (event) => {
-    setAmount(event.target.value.parseFloat());
+    setAmount(parseFloat(event.target.value));
   };
 
   const dateChangeHandler = (event) => {
