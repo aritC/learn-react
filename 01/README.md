@@ -13,3 +13,4 @@
   - third it the content in btw the opening and closing first element. Also it can be infinite elements and not just 1.
   - if its a html element you can just pass the string like 'div' but incase of custom component you can refer the component directly.
 - in past all the files where JSX was used needed the import React from './react' line, but now it is able to process without it.
+- we can use spread operator and update part of state keeping the prevState intact but we should remember that react schedules the state updates so in some case directly updating can cause some states to refer to older states. To prevent this from happening we can pass an anonymous function to the setState function which has the prevState as an arg and use spread op on that prevState arg
